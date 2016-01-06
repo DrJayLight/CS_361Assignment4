@@ -1,0 +1,6 @@
+.theAwesome{
+    -moz-border-radius:12px;
+    -webkit-border-radius: 13px;
+    -khtml-border-radius: 12px; 
+    border-radius: 15px;
+}

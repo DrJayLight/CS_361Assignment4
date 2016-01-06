@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+
+{% load staticfiles %}
+{% load static from staticfiles %}
+
+<html>
+<head><title>Teachers</title></head>
+<body>
+<link rel="stylesheet" type="text/css" href="{%static 'style1.css'%}" />
+<h1>Teachers</h1>
+
+<table>
+  <tr>
+    <td>Name</td>
+    <td>Surname</td>
+    <td>Office details</td>
+    <td>Phone</td>
+    <td>Email</td>
+  </tr>
+{% for teacher in teacher_list %}
+  <tr>
+    <td>{{ teacher.first_name }}</td>
+    <td>{{ teacher.last_name }}</td>
+    <td>{{ teacher.office_details }}</td> 
+    <td>{{ teacher.phone }}</td>
+    <td>{{ teacher.email }}</td>
+  <tr>
+{% endfor %}
+</table>
+</ul>
+</body>
+</html>
+

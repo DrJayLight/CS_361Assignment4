@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+
+{% load staticfiles %}
+{% load static from staticfiles %}
+
+<html>
+<head><title>Courses</title></head>
+<body>
+<h1>Courses</h1>
+<link rel="stylesheet" type="text/css" href="{%static 'style1.css'%}" />
+<table>
+  <tr>
+    <td>Name</td>
+    <td>Course Code</td>
+    <td>Room</td>
+    <td>Times</td>
+  </tr>
+{% for course in course_list %}
+  <tr>
+    <td>{{ course.name }}</td>
+    <td>{{ course.code }}</td>
+    <td>{{ course.classroom }}</td> 
+    <td>{{ course.times }}</td>
+  </tr>
+{% endfor %}
+</table>
+</body>
+</html>
+

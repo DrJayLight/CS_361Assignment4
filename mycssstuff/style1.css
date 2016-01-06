@@ -1,0 +1,17 @@
+table {
+    border-color: green;
+    border-spacing: 0.5rem;
+    border: 1px solid black;
+    border: solid thin; 
+    background: lightblue;
+    
+}
+
+td{
+    font-size: 20px;
+    line-height: 10px;
+    border-bottom: 1px solid green;
+    vertical-align: top;
+    padding: 10px;
+    font-family: "Roboto", "Lucida Grande", Verdana;
+}
